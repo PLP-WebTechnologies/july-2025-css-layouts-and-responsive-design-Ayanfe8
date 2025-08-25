@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ayanfe's responsive portfolio webpage using Flexbox and CSS Grid"
+    />
+    <title>Ayanfe's Responsive Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-text">
+            <h1 class="brand-title">Ayanfe Olapagbo</h1>
+            <p class="brand-tagline">
+              Web Developer | Tech Enthusiast | Lifelong Learner
+            </p>
+          </div>
+        </div>
+
+        <form class="site-search" role="search" aria-label="Site search">
+          <label class="visually-hidden" for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="Search…" />
+          <button type="submit" class="btn">Go</button>
+        </form>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main class="main-content" id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Ayanfe, a passionate web developer with a focus on creating
+          responsive and user-friendly websites. I enjoy turning ideas into
+          reality through clean and efficient code.
+        </p>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+          <h3>Projects</h3>
+          <div class="cards-container">
+            <div class="card">
+              <h4>Portfolio Website</h4>
+              <p>
+                A personal website built with pure HTML and CSS to showcase my
+                skills and projects.
+              </p>
+              <a href="#">View Project</a>
+            </div>
+            <div class="card">
+              <h4>HTML5 Semantic Page</h4>
+              <p>
+                A clean HTML5 page built with accessibility and SEO in mind.
+                lorem ipsum dolor sit.
+              </p>
+              <a href="#">View Project</a>
+            </div>
+            <div class="card">
+              <h4>CSS Flexbox Layout</h4>
+              <p>
+                A multi-section layout demonstrating Flexbox alignment. lorem
+                ipsum dolor sit.
+              </p>
+              <a href="#">View Project</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" id="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript (Basic)</li>
+          <li>Git & GitHub</li>
+          <li>Responsive Web Design</li>
+        </ul>
+      </aside>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p>&copy; 2025 Ayanfe Olapagbo. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
